@@ -10,3 +10,8 @@ $query = "insert into memo(name,memo,regdate)
 mysqli_query($connect, $query);
 
 // echo $query;
+?>
+
+<script>
+    location.href='21memo.php'
+</script>

@@ -41,7 +41,7 @@
             <?php/* 비번체크하면서 수정되어져 주석처리?>
                 <a href="del.php?idx=<?=$idx?>" onclick="return confirm('정말 삭제할까요?')">삭제</a>
             <?*/?>
-                <a href="confirmDel.php?idx=<?=$idx?>">삭제</a>
+                <a href="#123" onclick="chkPassword();">삭제</a>
                 <a href="write.php?idx=<?=$idx?>">수정</a>
             </div>
 
@@ -53,3 +53,14 @@
 
 </form>
 
+<script>
+    function chkPassword(){
+        var a = prompt("비밀번호를 입력해 주세요.");
+        // alert(a);
+        if(a){
+            location.href='del.php?idx=<?=$idx?>&pwd='+a;
+        }else{
+            alert("비밀번호를 입력하셔야 수정이 가능합니다.");
+        }
+    }
+</script>

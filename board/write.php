@@ -31,6 +31,10 @@
         </td>
     </tr>
     <tr>
+        <th>비밀번호</th>
+        <td><input type="text" name="pwd" value="<?=$data[pwd]?>" placeholder="비밀번호"></td>
+    </tr>
+    <tr>
         <td colspan="2">
             <div style="text-align:center;">
                 <input type="submit" value="저장">

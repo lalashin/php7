@@ -48,7 +48,7 @@ $mail->SMTPAuth = true;
 $mail->Username = 'ppeanut';
 
 //Password to use for SMTP authentication
-$mail->Password = 'WD8JG3WWY675';
+$mail->Password = '***';
 
 //Password to use for SMTP authentication
 $mail->CharSet = 'UTF-8';
@@ -57,14 +57,14 @@ $mail->CharSet = 'UTF-8';
 //Note that with gmail you can only use your account address (same as `Username`)
 //or predefined aliases that you have configured within your account.
 //Do not use user-submitted addresses in here
-$mail->setFrom('ppeanut@naver.com', '신인숙');
+$mail->setFrom('mail', '신인숙');
 
 //Set an alternative reply-to address
 //This is a good place to put user-submitted addresses
-$mail->addReplyTo('ppeanut@naver.com', '신인숙');
+$mail->addReplyTo('mail', '신인숙');
 
 //Set who the message is to be sent to
-$mail->addAddress('jekeysus@gmail.com', '신인숙');
+$mail->addAddress('mail', '신인숙');
 
 //Set the subject line
 $mail->Subject = '메일test';
